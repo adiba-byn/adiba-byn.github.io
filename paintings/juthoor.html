@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juthoor - Roots That Resist (جذور)</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <button class="toggle-btn" id="modeToggle" onclick="toggleMode()">🌙</button>
+
+  <div class="page-nav">
+    <button onclick="goBack()">← back</button>
+    <a href="/index.html">home</a>
+  </div>
+  <div class="carousel">
+    <h1>
+        Juthoor - Roots That Resist (جذور)
+    </h1>
+    <img id="carouselImage" src="assets/1._Roots_That_Resist.jpg" alt="Showcase image" />
+    <div class="carousel-controls">
+      <button id="prevBtn" onclick="changeSlide(-1)" style="display: none;">←</button>
+      <button id="nextBtn" onclick="changeSlide(1)">→</button>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+  <script>
+    const images = [
+        'assets/1._Roots_That_Resist.jpg',
+        'assets/2._Roots_That_Resist.jpg',
+        'assets/3._Roots_That_Resist.jpg',
+        'assets/4._Roots_That_Resist.jpg'
+    ];
+  </script>
+  <script src="/carousel.js"></script>
+</body>
+</html>
